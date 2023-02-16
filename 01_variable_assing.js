@@ -44,16 +44,16 @@ var lastname = "Satpute";
 console.log(
   "FirstName:",
   firstName,
-  "LastName",
+  "LastName:",
   lastName,
-  "age",
+  "age:",
   age,
-  "Gender",
+  "Gender:",
   gender,
-  "Married",
+  "Married:",
   isMarried,
-  "Address",
+  "Address:",
   address,
-  "Pincode",
+  "Pincode:",
   pinCode
 );
