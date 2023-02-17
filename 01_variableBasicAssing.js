@@ -49,7 +49,7 @@ var totalCount = 107;
 var totalCount = 117;
 console.log("typeof variable is totalcount:", typeof totalcount, "My totalCount:",totalCount);
 
-console.log("Practicle.0 swappng variable");
+console.log("Practicle.0 swapping variable");
 
 var sweety = "sweety";
 var cutie = "cutie";
@@ -58,7 +58,7 @@ sweety = cutie;
 cutie = temp;
 console.log(sweety, cutie);
 
-console.log("Assing:03 swappng variable");
+console.log("Assing:03 swapping variable");
 
 var num1 = 100; //200
 var num2 = 200; //100
@@ -67,7 +67,7 @@ num1 = num2;
 num2 = temp;
 console.log(num1, num2);
 
-console.log("Assing:03 swappng variable");
+console.log("Assing:03 swapping variable");
 
 var num2 = 200; //300
 var num3 = 300; //200
