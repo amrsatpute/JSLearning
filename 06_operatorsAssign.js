@@ -6,38 +6,24 @@ function greaterNumber(num1, num2) {
 greaterNumber(10, -10);
 greaterNumber(800, 899);
 
-console.log("---03 Assingment---");
+  console.log(`***Even Odd Number02***`);
 
-function maleMarriageEligibility(gender, age, boyName) {
-  var result =
-    gender == "Male" && age >= 21
-      ? `Hey ${boyName} you are eligible for marriage`
-      : `Hey ${boyName} you are not eligible for marriage`;
+function isEvenOddNumber(num1) {
+  var result = num1 % 2 == 0 ? "true" : "false";
   return result;
 }
-var result = maleMarriageEligibility("Male", 25, "Swapnill");
-console.log(result);
-var result1 = maleMarriageEligibility("Male", 17, "Akshay");
-console.log(result1);
+var result = isEvenOddNumber(29);
+console.log(`Condition is : ${result}`);
 
-function femaleMarriageEligibility(gender, age, girlName) {
-  var result =
-    gender == "female" && age >= 18
-      ? `Hey ${girlName} you are eligible for marriage`
-      : `Hey ${girlName} you are not eligible for marriage`;
-  return result;
-}
-var result = femaleMarriageEligibility("female", 16, "Akshada");
-console.log(result);
+var result = isEvenOddNumber(44);
+console.log(`Condition is : ${result}`);
 
-var result1 = femaleMarriageEligibility("female", 27, "Rashmika");
-console.log(result1);
+var result = isEvenOddNumber(0);
+console.log(`Condition is : ${result}`);
 
- function tcsCriterea(gradScore,hscScore,sscScore,candidateName){
-  var result = (gradScore >= 70 || hscScore >= 80 || sscScore > 90) ? "ALLOW HIM FOR INTERVIEW" : "dONT ALLOW";
-  console.log(`TCS Critarea: ${result}`);
- }
- tcsCriterea(80,86,90, "ABC");
- tcsCriterea(70,65,55, "BCA");
- tcsCriterea(60,79,88, "MSC");
+var result = isEvenOddNumber(101);
+console.log(`Condition is : ${result}`);
+
+
+
 
