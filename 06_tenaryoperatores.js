@@ -1,16 +1,9 @@
-console.log(`***Even Odd Number02***`);
-function isEvenOddNumber(num1) {
-  var result = num1 % 2 == 0 ? "true" : "false";
-  return result;
-}
-var result = isEvenOddNumber(29);
-console.log(`Condition is : ${result}`);
+console.log("*****TCS Interview ALLOW/Dont Allow*****");
 
-var result = isEvenOddNumber(44);
-console.log(`Condition is : ${result}`);
-
-var result = isEvenOddNumber(0);
-console.log(`Condition is : ${result}`);
-
-var result = isEvenOddNumber(101);
-console.log(`Condition is : ${result}`);
+ function tcsCriterea(gradScore,hscScore,sscScore,candidateName){
+  var result = (gradScore >= 70 || hscScore >= 80 || sscScore > 90) ? "ALLOW HIM FOR INTERVIEW" : "dONT ALLOW";
+  console.log(`TCS Critarea: ${result}`);
+ }
+  tcsCriterea(80,86,90, "ABC");
+  tcsCriterea(70,65,55, "BCA");
+   tcsCriterea(60,79,88, "MSC");
