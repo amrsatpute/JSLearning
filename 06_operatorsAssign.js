@@ -1,10 +1,11 @@
 console.log(`***Greates Number01***`);
-function greaterNumber(num1, num2) {
-  var result = num1 > num2 ? num1 : num2;
+function greaterNumber(num1, num2,num3) {
+  var result = num1 > num2 > num3 ? num1 : num2, num3;
   console.log(`GreaterNumber: ${result}`);
 }
 greaterNumber(10, -10);
 greaterNumber(800, 899);
+greaterNumber(767, -988);
 
   console.log(`***Even Odd Number02***`);
 
