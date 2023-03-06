@@ -44,5 +44,5 @@ for (let index = 10; index <= 100; index = index + 10) {
 }
 console.log("****Reserve table 100 To 10 ****");
 for (let index = 10; index >= 1; index--) {
-    console.log(`index 10 to 100 value:${index * 10}`);
+  console.log(`index 10 to 100 value:${index * 10}`);
 }
