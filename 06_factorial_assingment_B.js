@@ -47,3 +47,4 @@ console.log(`*********`);
 
 var factorialOf3 = factorialOfNum(3);
 console.log(`The factorial of given number "3" is ${factorialOf3}`);
+Z
