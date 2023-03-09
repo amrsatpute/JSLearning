@@ -1,4 +1,4 @@
-let arryOfNumbers = [0,1,2,3,4,5,6,7,8];
+let arryOfNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 console.log(arryOfNumbers);
 //console.table(arryOfNumbers);
 let totalArryElements = arryOfNumbers.length;
@@ -16,14 +16,14 @@ console.log(`Index of elements 8 is: ${indexOf8}`);
 const indexOf100 = arryOfNumbers.indexOf(100);
 console.log(`Index of elements 100 is: ${indexOf100}`);
 
-let arryOfNumber = [10 , 20, 25, 15, 30, 5];
+let arryOfNumber = [10, 20, 25, 15, 30, 5];
 const valueAtIndex2 = arryOfNumber[2];
 console.log(`Value at index 2 is: ${valueAtIndex2}`);
 
-arryOfNumber[3] = 35;//replace index at 3 (25 into 35)
+arryOfNumber[3] = 35; //replace index at 3 (25 into 35)
 console.log(arryOfNumber);
 
-arryOfNumber[1] = 50;//replace index at 1(10 into 50)
+arryOfNumber[1] = 50; //replace index at 1(10 into 50)
 console.log(arryOfNumber);
 
 var arrayOfNumbers = [10, 20, 25, 15, 30, 5];
@@ -49,7 +49,7 @@ const arrayFromIndex3 = arrayOfNumbers.slice(3);
 console.log(arrayFromIndex3);
 
 console.log(`----- Slice(startIndex , endIndex) -----`);
-const subarray = arrayOfNumbers.slice(2 , 5);
+const subarray = arrayOfNumbers.slice(2, 5);
 console.log(subarray);
 
 console.log(`---------------------------------------`);
@@ -59,19 +59,21 @@ const splicedArry = arrayOfNumbers.splice(3);
 console.log(`Removed elements from array is: ${splicedArry}`);
 console.log(arrayOfNumbers);
 
-
 var arrayOfNumbers = [10, 20, 25, 15, 40, 45];
 console.log(`----- splice (startIndex , deletCount)-----`);
-const splicedArryWithDeletedCount = arrayOfNumbers.splice(2 , 2);
-console.log(`Removed elements using delet count from array is: ${splicedArryWithDeletedCount}`);
+const splicedArryWithDeletedCount = arrayOfNumbers.splice(2, 2);
+console.log(
+  `Removed elements using delet count from array is: ${splicedArryWithDeletedCount}`
+);
 console.log(arrayOfNumbers);
 
 var arrayOfNumbers = [10, 20, 25, 15, 40, 45];
-arrayOfNumbers.splice(3 , 1);
+arrayOfNumbers.splice(3, 1);
 console.log(`After removing 15: ${arrayOfNumbers}`);
 
-
-console.log(`----- splice() to insert more element without replacing existing elements -----`);
+console.log(
+  `----- splice() to insert more element without replacing existing elements -----`
+);
 var arrayOfNumbers = [10, 20, 25, 15, 40, 45];
 //insert 5, 35, 55 at index 4
 arrayOfNumbers.splice(4, 0, 5, 35, 55);
@@ -82,3 +84,20 @@ var arrayOfNumbers = [10, 20, 25, 15, 40, 45];
 //replace 25 by 50, 60
 arrayOfNumbers.splice(2, 1, 50, 60);
 console.log(arrayOfNumbers);
+
+console.log("===== Traversing  ====================");
+var arrayOfNumbers = [10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26];
+for (let index = 0; index < arrayOfNumbers.length; index++) {
+    const element = arrayOfNumbers[index];
+    console.log(element);
+}
+
+console.log("===== Traversing  ====================");
+var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
+let sum = 0; // 10
+for (let index = 0; index < arrayOfNumbers.length; index++) {//1
+    const element = arrayOfNumbers[index];
+   sum = sum + element;// sum = 0 + 20
+    // console.log(element);
+}
+console.log(`Sum of an Array element is: ${sum}`);
