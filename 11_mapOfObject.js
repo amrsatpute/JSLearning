@@ -19,10 +19,22 @@ class Bank {
     this.interestRate = interestRate;
   }
 }
-const axisBank = new Bank("SBI Bank", "Latur", "AXS10203040", "SBI9767", "12.4");
+const axisBank = new Bank(
+  "SBI Bank",
+  "Latur",
+  "AXS10203040",
+  "SBI9767",
+  "12.4"
+);
 console.log(axisBank);
 
-const sbiBank = new Bank("AXIS Bank", "Mumbai", "SBI12345678", "AXIS088", "9.12");
+const sbiBank = new Bank(
+  "AXIS Bank",
+  "Mumbai",
+  "SBI12345678",
+  "AXIS088",
+  "9.12"
+);
 console.log(sbiBank);
 
 const iciciBank = new Bank(
@@ -86,4 +98,3 @@ for (const key of keysOfMap) {
     `Bank Name is: ${element.bankName} , Account Number is : ${element.accountNumber} , Interest Rate is : ${element.interestRate}`
   );
 }
-
